@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #f9e7e0;
+    text-shadow: -2px 0 #19080f, 0 2px #19080f, 2px 0 #19080f, 0 -2px #19080f;
+}
+
+.fixed {
+    position: fixed;
+}
+
+body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.background-top {
+    /* background: #ffffff url(../img/1264.png) center 55% no-repeat; */
+    background: #ffffff url(../img/ClothView_Midjourney.png) center 55%
+        no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.content {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    overflow: auto;
+    position: absolute;
+}
+
+.nav-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 5%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+}
+
+.logo {
+    /* background: url(../img/ClothView.png) no-repeat; */
+    left: 5%;
+    position: absolute;
+}
+
+.logo img {
+    height: 15px;
+}
+
+.nav-menu {
+    position: absolute;
+    width: 70%;
+    top: 0;
+    right: 5%;
+    bottom: 0;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    margin: 0 0 0 5%;
+    /* text-shadow: 1px 1px 1px #D0C2AA; */
+    transition: all 0.2s ease 0s;
+}
+
+.nav-menu a:hover {
+    scale: 1.01;
+    color: #56cde3;
+    text-shadow: -1px 0 #19080f, 0 1px #19080f, 1px 0 #19080f, 0 -1px #19080f;
+}
+
+.nav-button {
+    background-color: rgb(116, 195, 255);
+    padding: 0.4rem 1rem;
+    border-radius: 8px;
+    border: 1px solid black;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-button:hover {
+    background-color: rgb(75, 177, 255);
+}
+
+.section {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* ! */
+
+.intro {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#intro {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+#intro h1 {
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+#intro h3 {
+    font-size: 22px;
+    font-weight: 500;
+    /* max-width: 70%; */
+    margin: 5vh 0 0;
+}
+
+.intro-button {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    display: inline-block;
+    margin: 8vh 0 0;
+}
+
+.arrow-down {
+    height: 36px;
+    width: 36px;
+    background: url(../img/arrowheaddownoutline_110820.svg) center 55% no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+    cursor: pointer;
+    filter: invert(88%) sepia(4%) saturate(952%) hue-rotate(324deg)
+        brightness(107%) contrast(95%);
+}
+
+/*
+transition: all 0.3s ease 0s;
+transform: scale(1.01);
+*/
+
+/* ! */
+
+.about {
+    background-color: #ffffff;
+    display: table;
+    height: 100vh;
+}
+
+.about-left {
+    padding: 0 0 0 13%;
+    width: 30%;
+    text-align: left;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.about-right {
+    width: 70%;
+    display: table-cell;
+}
+
+.about-right > img {
+    width: 130%;
+}
+
+/* ! */
+
+.advantages {
+    background-color: #3a7787;
+    /* background: -webkit-linear-gradient(360deg, #d0c2aa,#103e48);
+    background: linear-gradient(360deg, #d0c2aa,#103e48); */
+    display: flex;
+    padding: 1% 0 0;
+    min-height: 100vh;
+}
+
+.advantages-left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 8%;
+}
+
+.advantages-why {
+    font-size: 42px;
+    word-spacing: 100vh;
+    text-align: left;
+    margin-left: 30%;
+}
+
+.advantages-right {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.advantage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+}
+
+.advantage:hover {
+    transform: scale(1.01);
+}
+
+.advantage > img {
+    width: 20%;
+    max-height: 50%;
+}
+
+.advantage > .text {
+    width: 80%;
+    text-align: left;
+}
+
+/* ! */
+
+.instruction {
+    min-height: 100vh;
+    height: 100vh;
+    background-color: #d08f83; /* #f7ecea; */
+    position: relative;
+}
+
+.instruction-name {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 42px;
+}
+
+.instruction-list {
+    height: 100%;
+    margin: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.instruction-point {
+    width: 30%;
+    position: absolute;
+}
+
+#d1 {
+    top: 25%;
+    left: 0;
+}
+
+#d2 {
+    top: 50%;
+}
+
+#d3 {
+    top: 75%;
+    right: 0;
+}
+
+.instruction-icon {
+    min-height: 16px;
+    max-height: 8vh;
+    height: 8vh;
+}
+
+.instruction-point > h3 {
+    font-size: 24px;
+}
+
+/* ! */
+
+/* req cert */
+
+.req-cert-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16vh 0 45vh;
+}
+
+.req-input {
+    margin: 1.25rem 0 0;
+    padding: 0.3rem 1rem;
+    width: 20%;
+}
+
+.req-input::placeholder {
+    text-align: center;
+}
+
+.req-button {
+    margin: 1rem 0 0;
+    padding: 0.3rem 0.5rem;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <title>ClothView</title>
+        <link rel="icon" type="img/favicon.ico" href="img/favicon.ico" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="background-top fixed" id=""></div>
+
+        <div class="content">
+            <nav class="nav-bar">
+                <a class="logo" href="/">
+                    <img src="img/ClothView.png" alt="logo" />
+                </a>
+                <div class="nav-menu">
+                    <a href="/#project1"> Воздухопроницаемость </a>
+                    <a href="/#project2">
+                        Характеристики текстильного материала
+                    </a>
+                    <a href="/#project3"> Жёсткость и драпируемость </a>
+                    <a href="/" style="display: none"> О нас </a>
+                </div>
+            </nav>
+
+            <section class="section intro">
+                <div id="intro">
+                    <h1>ClothView</h1>
+                    <h3>
+                        Инновационное решение для работы с текстильными
+                        материалами
+                    </h3>
+                    <a class="intro-button" href="#" style="display: none"
+                        >Начать</a
+                    >
+                </div>
+                <div class="arrow-down"></div>
+            </section>
+
+            <section class="section about" style="display: none">
+                <div class="about-left">
+                    <h2>Цифровой сервис</h2>
+                    <br />
+                    <h3>Быстрый.</h3>
+                    <h3>Лёгкий.</h3>
+                    <h3>Доступный.</h3>
+                </div>
+                <div class="about-right">
+                    <img src="img/1264.png" alt="devices" />
+                </div>
+            </section>
+
+            <section class="section advantages">
+                <div class="advantages-left">
+                    <div class="advantages-why">Почему именно мы?</div>
+                </div>
+                <div class="advantages-right">
+                    <div class="advantage">
+                        <img src="img/lampo4ka.svg" alt="point" />
+                        <h3 class="text">
+                            Авторская методика с использованием методов ML
+                        </h3>
+                    </div>
+                    <div class="advantage">
+                        <img src="img/lampo4ka.svg" alt="point" />
+                        <h3 class="text">Низкий порог входа</h3>
+                    </div>
+                    <div class="advantage">
+                        <img src="img/lampo4ka.svg" alt="point" />
+                        <h3 class="text">Без разрушения материала</h3>
+                    </div>
+                    <div class="advantage">
+                        <img src="img/lampo4ka.svg" alt="point" />
+                        <h3 class="text">Низкая стоимость</h3>
+                    </div>
+                    <div class="advantage">
+                        <img src="img/lampo4ka.svg" alt="point" />
+                        <h3 class="text">Быстрая скорость исследования</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section instruction">
+                <div class="instruction-list">
+                    <div id="d1" class="instruction-point">
+                        <img
+                            class="instruction-icon"
+                            src="img/arrow_down_download_icon.svg"
+                            alt="photo"
+                        />
+                        <h3>Сфотографировать текстильный материал.</h3>
+                    </div>
+                    <div id="d2" class="instruction-point d2">
+                        <img
+                            class="instruction-icon"
+                            src="img/photo-camera-1_icon.svg"
+                            alt="download"
+                        />
+                        <h3>Загрузить фотографию.</h3>
+                    </div>
+                    <div id="d3" class="instruction-point d3">
+                        <img
+                            class="instruction-icon"
+                            src="img/read_study_icon.svg"
+                            alt="result"
+                        />
+                        <h3>Получить результат.</h3>
+                    </div>
+                </div>
+                <div class="instruction-name">Как пользоваться сервисом</div>
+            </section>
+
+            <section class="section footer" style="display: none">
+                footer
+            </section>
+        </div>
+
+        <script>
+            $(".arrow-down").click(function () {
+                $(".content").animate({ scrollTop: $(window).height() }, 500);
+                // $(".background-top").css({ filter: "blur(2px)" });
+            });
+        </script>
+    </body>
+</html>
