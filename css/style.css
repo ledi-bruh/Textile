@@ -1,16 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=Rubik&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Andika', sans-serif;
     font-size: 20px;
     font-weight: 400;
     text-decoration: none;
     letter-spacing: 1px;
     color: #f9e7e0;
     text-shadow: -2px 0 #19080f, 0 2px #19080f, 2px 0 #19080f, 0 -2px #19080f;
+    /* -webkit-text-stroke: 1px #19080f; */
+    /* -webkit-text-fill-color: #f9e7e0; */
 }
 
 .fixed {
@@ -168,17 +170,30 @@ button {
     bottom: 5%;
     text-align: center;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
     filter: invert(90%) sepia(15%) saturate(638%) hue-rotate(308deg)
         brightness(107%) contrast(95%);
-
-    /* firightlter: invert(88%) sepia(4%) saturate(952%) hue-rotate(324deg)
-        bness(107%) contrast(95%); */
+    /* filter: invert(88%) sepia(4%) saturate(952%) hue-rotate(324deg)
+        brightness(107%) contrast(95%); */
 }
 
-/*
-transition: all 0.3s ease 0s;
-transform: scale(1.01);
-*/
+.arrow-down:hover {
+    animation: jump 1s ease infinite;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(10%);
+    }
+
+    50% {
+        transform: translateY(-10%);
+    }
+
+    100% {
+        transform: translateY(10%);
+    }
+}
 
 /* ! */
 
@@ -244,16 +259,27 @@ transform: scale(1.01);
     align-items: center;
     height: 15vh;
     width: 100%;
-    transition: all 0.3s ease 0s;
+    transition: all 0.5s ease 0s;
 }
 
 .advantage:hover {
     transform: scale(1.01);
 }
 
-.advantage > img {
-    width: 20%;
-    max-height: 50%;
+.advantage-img {
+    width: 15%;
+    height: 100%;
+    min-height: 60%;
+    max-height: 80%;
+    background: center url("../img/lampo4ka.svg") no-repeat;
+    background-size: auto;
+    -webkit-background-size: auto;
+    transition: all 0.5s ease 0.1s;
+}
+
+.advantage:hover .advantage-img {
+    background-image: url("../img/lampo4kaL.svg");
+    transform: rotate(-30deg);
 }
 
 .advantage > .text {
