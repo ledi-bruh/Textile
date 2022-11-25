@@ -144,11 +144,11 @@ button {
     letter-spacing: 5px;
 }
 
-#intro h3 {
+.intro-describe {
+    width: 50%;
     font-size: 22px;
     font-weight: 500;
-    /* max-width: 70%; */
-    margin: 5vh 0 0;
+    margin: 11vh auto 0;
 }
 
 .intro-button {
@@ -168,8 +168,11 @@ button {
     bottom: 5%;
     text-align: center;
     cursor: pointer;
-    filter: invert(88%) sepia(4%) saturate(952%) hue-rotate(324deg)
+    filter: invert(90%) sepia(15%) saturate(638%) hue-rotate(308deg)
         brightness(107%) contrast(95%);
+
+    /* firightlter: invert(88%) sepia(4%) saturate(952%) hue-rotate(324deg)
+        bness(107%) contrast(95%); */
 }
 
 /*
@@ -286,6 +289,11 @@ transform: scale(1.01);
 .instruction-point {
     width: 30%;
     position: absolute;
+    transition: all 0.5s ease 0s;
+}
+
+.instruction-point:hover {
+    transform: scale(1.01);
 }
 
 #d1 {
