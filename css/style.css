@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Andika&family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Andika&family=Rubik&display=swap");
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Andika', sans-serif;
+    font-family: "Andika", sans-serif;
     font-size: 20px;
     font-weight: 400;
     text-decoration: none;
@@ -13,10 +13,6 @@
     text-shadow: -2px 0 #19080f, 0 2px #19080f, 2px 0 #19080f, 0 -2px #19080f;
     /* -webkit-text-stroke: 1px #19080f; */
     /* -webkit-text-fill-color: #f9e7e0; */
-}
-
-.fixed {
-    position: fixed;
 }
 
 body {
@@ -32,11 +28,22 @@ body {
     background: #ffffff url(../img/ClothView_Midjourney.png) center 55%
         no-repeat;
     background-size: cover;
+    background-position: top;
     top: 0;
     left: 0;
     right: 0;
     height: 100%;
     z-index: -1;
+    position: fixed;
+}
+
+.background-bottom {
+    position: fixed;
+    background: #8d1b1b;
+    height: 50vh;
+    width: 100%;
+    margin-top: 120px;
+    z-index: 0;
 }
 
 .hidden {
@@ -53,14 +60,14 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    height: 100%;
+    /* height: 100%; */
     overflow: auto;
     position: absolute;
 }
 
 .nav-bar {
     position: absolute;
-    top: 0;
+    top: 3%;
     left: 0;
     right: 0;
     padding: 0 5%;
@@ -223,12 +230,27 @@ button {
 /* ! */
 
 .advantages {
-    background-color: #3a7787;
+    /* background-color: #3a7787; */
     /* background: -webkit-linear-gradient(360deg, #d0c2aa,#103e48);
     background: linear-gradient(360deg, #d0c2aa,#103e48); */
+    position: relative;
     display: flex;
     padding: 1% 0 0;
     min-height: 100vh;
+    backdrop-filter: blur(2px);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgb(16, 62, 72, 100));
+}
+
+.background-advantages {
+    /* display: none; */
+    position: absolute;
+    background-image: url(../img/1264.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+    margin: 0 0 5% 5%;
 }
 
 .advantages-left {
@@ -237,6 +259,7 @@ button {
     flex-direction: column;
     justify-content: center;
     padding: 0 0 0 8%;
+    z-index: 10;
 }
 
 .advantages-why {
@@ -251,6 +274,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 10;
 }
 
 .advantage {
@@ -289,10 +313,26 @@ button {
 
 /* ! */
 
+.logo-string {
+    position: relative;
+    background-color: #3a7787;
+}
+
+.logo-string > div {
+    height: 10vh;
+    background-image: url(../img/clothview_string.png);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: contain;
+}
+
+/* ! */
+
 .instruction {
     min-height: 100vh;
     height: 100vh;
-    background-color: #d08f83; /* #f7ecea; */
+    background-color: #3a7787;
+    /* backdrop-filter: blur(3px); */
     position: relative;
 }
 

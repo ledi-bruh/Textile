@@ -8,7 +8,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     </head>
     <body>
-        <div class="background-top fixed" id=""></div>
+        <div class="background-top"></div>
+        <div class="background-bottom" style="display: none"></div>
 
         <div class="content">
             <nav class="nav-bar">
@@ -53,6 +54,7 @@
             </section>
 
             <section class="section advantages">
+                <div class="background-advantages" style="display: none"></div>
                 <div class="advantages-left">
                     <div class="advantages-why">Почему именно мы?</div>
                 </div>
@@ -80,6 +82,10 @@
                         <h3 class="text">Быстрая скорость исследования</h3>
                     </div>
                 </div>
+            </section>
+
+            <section class="section logo-string">
+                <div></div>
             </section>
 
             <section class="section instruction">
@@ -122,6 +128,23 @@
                 $(".content").animate({ scrollTop: $(window).height() }, 500);
                 // $(".background-top").css({ filter: "blur(2px)" });
             });
+
+            var k = 3;
+            $(".content").scroll(() => {
+                var movement = -parseInt((k * $(".content").scrollTop()) / 10);
+                $(".background-top").css({
+                    backgroundPosition: "center " + movement + "px",
+                });
+            });
+        </script>
+        <script>
+            //$(".advantage").hover(() => {
+            //    $(".background-advantages").toggle();
+            //});
+
+            //$(".content").mousemove((e) => {
+            //    $(".background-top").css({top: e.clientY});
+            //});
         </script>
     </body>
 </html>
