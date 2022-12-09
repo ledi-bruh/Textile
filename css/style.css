@@ -237,8 +237,12 @@ button {
     display: flex;
     padding: 1% 0 0;
     min-height: 100vh;
-    backdrop-filter: blur(2px);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgb(16, 62, 72, 100));
+    backdrop-filter: blur(1px);
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0),
+        rgb(16, 62, 72, 100)
+    );
 }
 
 .background-advantages {
@@ -267,6 +271,12 @@ button {
     word-spacing: 100vh;
     text-align: left;
     margin-left: 30%;
+    transition: all 0.5s ease 0s;
+    cursor: default;
+}
+
+.advantages-why:hover {
+    color: #ffdf43;
 }
 
 .advantages-right {
@@ -309,21 +319,23 @@ button {
 .advantage > .text {
     width: 80%;
     text-align: left;
+    cursor: default;
 }
 
 /* ! */
 
 .logo-string {
     position: relative;
-    background-color: #3a7787;
+    background-color: #486285;
+    cursor: default;
 }
 
 .logo-string > div {
-    height: 10vh;
-    background-image: url(../img/clothview_string.png);
-    background-repeat: repeat-x;
-    background-position: center;
-    background-size: contain;
+    font-weight: 600;
+    font-size: 4vw;
+    letter-spacing: 6vw;
+    color: #f4d4c5;
+    text-shadow: -1px 0 #19080f, 0 1px #19080f, 1px 0 #19080f, 0 -1px #19080f;
 }
 
 /* ! */
@@ -331,7 +343,7 @@ button {
 .instruction {
     min-height: 100vh;
     height: 100vh;
-    background-color: #3a7787;
+    background-color: #f4d4c5;
     /* backdrop-filter: blur(3px); */
     position: relative;
 }
@@ -341,6 +353,12 @@ button {
     top: 10%;
     right: 10%;
     font-size: 42px;
+    transition: all 0.5s ease 0s;
+    cursor: default;
+}
+
+.instruction-name:hover {
+    color: #ef8350;
 }
 
 .instruction-list {
@@ -356,10 +374,19 @@ button {
     width: 30%;
     position: absolute;
     transition: all 0.5s ease 0s;
+    cursor: default;
+}
+
+.instruction-point > h3 {
+    transition: all 0.5s ease 0s;
 }
 
 .instruction-point:hover {
-    transform: scale(1.01);
+    /* transform: scale(1.01); */
+}
+
+.instruction-point:hover > h3 {
+    transform: scale(1.03);
 }
 
 #d1 {
@@ -378,8 +405,8 @@ button {
 
 .instruction-icon {
     min-height: 16px;
-    max-height: 8vh;
-    height: 8vh;
+    max-height: 6vw;
+    height: 4vw;
 }
 
 .instruction-point > h3 {
