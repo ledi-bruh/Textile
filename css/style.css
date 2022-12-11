@@ -109,8 +109,7 @@ button {
 }
 
 .nav-menu a:hover {
-    scale: 1.01;
-    color: #56cde3;
+    color: #ef8350;
     text-shadow: -1px 0 #19080f, 0 1px #19080f, 1px 0 #19080f, 0 -1px #19080f;
 }
 
